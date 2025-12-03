@@ -1,6 +1,6 @@
 defmodule LocalCafe.Menu.Item do
   @enforce_keys [:title, :body, :description, :tags, :path, :prices]
-  defstruct [:title, :body, :description, :tags, :prices, :path, :image]
+  defstruct [:title, :body, :description, :tags, :prices, :path, :image, :position]
 
   def build(filename, attrs, body) do
     [_, file] =

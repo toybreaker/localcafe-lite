@@ -7,8 +7,9 @@ defmodule LocalCafe.Menu do
     as: :items
 
   # The @items variable is first defined by NimblePublisher.
-  # Let's further modify it by sorting all items by descending date.
-  # @items Enum.sort_by(@items, & &1.date, {:desc, Date})
+  # Sort items by position (0-indexed, lower numbers first), then alphabetically by title.
+  # Items without a position default to 999999 (appearing at the end).
+  @items Enum.sort_by(@items, &{&1.position || 999999, &1.title})
 
   # Let's also get all tags
   @tags @items |> Enum.flat_map(& &1.tags) |> Enum.uniq() |> Enum.sort()

@@ -4,7 +4,8 @@
   prices: [small: "$2.00", large: "$3.99"],
   tags: ~w(salads sides wrap),
   description: "For $2 more any salad can be made into a wrap!",
-  image: "/images/wrap.jpg"
+  image: "/images/wrap.jpg",
+  position: 1
 }
 ---
 

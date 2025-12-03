@@ -18,6 +18,7 @@ It creates a professional website that can cost nothing to host and are easy to 
 ### Online Menu
 - Display your full menu with photos, descriptions, and prices
 - Single prices or multiple options (small/large, hot/iced, etc.)
+- Control the order items appear with position field
 - Customers filter by tags (vegetarian, gluten-free, breakfast, lunch)
 - Update by editing simple text files
 
@@ -93,6 +94,25 @@ Your detailed description here...
   image: "/images/latte.jpg"
 }
 ```
+
+**Controlling display order:**
+
+Add a `position` field to control the order items appear on the menu (0-indexed, lower numbers first):
+
+```elixir
+%{
+  title: "Featured Special",
+  prices: "$8.99",
+  tags: ~w(featured lunch),
+  description: "Today's special",
+  image: "/images/special.jpg",
+  position: 0  # Appears first
+}
+```
+
+- Items are sorted by `position` first, then alphabetically by title
+- Items with the same position are sorted alphabetically
+- Items without a position appear at the end, sorted alphabetically
 
 ### Locations
 Create markdown files in `priv/locations/`. Coordinates fetched automatically.
@@ -212,7 +232,8 @@ Generated site is in `priv/output/`. Upload this folder to:
      prices: [single: "$3.50", double: "$4.50"],
      tags: ~w(coffee hot),
      description: "Rich, bold espresso",
-     image: "/images/espresso.jpg"
+     image: "/images/espresso.jpg",
+     position: 0  # Optional: controls display order (0 = first)
    }
    ---
 

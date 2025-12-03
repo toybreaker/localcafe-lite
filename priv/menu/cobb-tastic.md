@@ -4,7 +4,8 @@
   prices: "$17.89",
   tags: ~w(salads sides),
   description: "romaine, field greens, bacon, tomato, seared chicken breast, cage-free egg + blue cheese dressing. Gluten-free. Contains dairy. ",
-  image: "/images/salad.jpg"
+  image: "/images/salad.jpg",
+  position: 0
 }
 ---
 
