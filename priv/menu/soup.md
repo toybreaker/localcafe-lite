@@ -4,7 +4,8 @@
   prices: "$5.95",
   tags: ~w(soup sides gluten-free dairy-free vegan),
   description: "Yams, carrots, coconut milk, ginger & curry A little bit of spice & everything nice. Gluten-free. Dairy free. Vegan.",
-  image: "/images/soup.jpg"
+  image: "/images/soup.jpg",
+  position: 1
 }
 ---
 

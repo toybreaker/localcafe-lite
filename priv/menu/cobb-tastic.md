@@ -5,7 +5,7 @@
   tags: ~w(salads sides),
   description: "romaine, field greens, bacon, tomato, seared chicken breast, cage-free egg + blue cheese dressing. Gluten-free. Contains dairy. ",
   image: "/images/salad.jpg",
-  position: 0
+  position: 2
 }
 ---
 

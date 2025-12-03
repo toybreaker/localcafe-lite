@@ -5,7 +5,7 @@
   tags: ~w(salads sides wrap),
   description: "For $2 more any salad can be made into a wrap!",
   image: "/images/wrap.jpg",
-  position: 1
+  position: 2
 }
 ---
 

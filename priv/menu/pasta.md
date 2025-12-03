@@ -4,7 +4,8 @@
   prices: "$22.99",
   tags: ~w(pasta),
   description: "Spaghetti is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine.",
-  image: "/images/pasta.jpg"
+  image: "/images/pasta.jpg",
+  position: 0
 }
 ---
 

@@ -4,7 +4,8 @@
   prices: "$39.99",
   tags: ~w(pasta),
   description: "Ravioli are a traditional Italian type of stuffed pasta comprising a filling enveloped in thin pasta dough, typically served in broth or with a sauce.",
-  image: "/images/rav.jpg"
+  image: "/images/rav.jpg",
+  position: 0
 }
 ---
 
